@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - IMU CET PrepHub</title>
+    <meta name="description" content="Browse our comprehensive IMU-CET preparation courses. Find the right course to help you prepare for the Indian Maritime University Common Entrance Test.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar-container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="IMU CET PrepHub Logo" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle active" href="#" id="coursesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Courses
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="coursesDropdown">
+                                <li><a class="dropdown-item" href="course-detail.html?id=1">Complete IMU-CET Preparation</a></li>
+                                <li><a class="dropdown-item" href="course-detail.html?id=2">Mathematics for IMU-CET</a></li>
+                                <li><a class="dropdown-item" href="course-detail.html?id=3">Physics for IMU-CET</a></li>
+                                <li><a class="dropdown-item" href="course-detail.html?id=4">Chemistry for IMU-CET</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item active" href="courses.html">View All Courses</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Resources
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="resourcesDropdown">
+                                <li><a class="dropdown-item" href="#">Mock Tests</a></li>
+                                <li><a class="dropdown-item" href="#">Study Materials</a></li>
+                                <li><a class="dropdown-item" href="#">Previous Papers</a></li>
+                                <li><a class="dropdown-item" href="#">IMU-CET Syllabus</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex">
+                        <a href="login.html" class="btn btn-outline-primary me-2">Log in</a>
+                        <a href="login.html#signup" class="btn btn-primary">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="bg-light py-5">
+        <div class="container">
+            <div class="mb-4">
+                <h1 class="display-5 fw-bold">Courses</h1>
+                <p class="lead text-muted">Browse our comprehensive IMU-CET preparation courses</p>
+            </div>
+
+            <!-- Search and Filter -->
+            <div class="bg-white p-4 rounded shadow-sm mb-4">
+                <div class="row g-3">
+                    <div class="col-md-8">
+                        <div class="input-group">
+                            <span class="input-group-text bg-white border-end-0">
+                                <i class="bi bi-search text-muted"></i>
+                            </span>
+                            <input type="text" class="form-control border-start-0" placeholder="Search courses...">
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex gap-2">
+                        <button class="btn btn-outline-secondary d-flex align-items-center">
+                            <i class="bi bi-funnel me-2"></i> Filter
+                        </button>
+                        <select class="form-select">
+                            <option>Sort by: Popular</option>
+                            <option>Price: Low to High</option>
+                            <option>Price: High to Low</option>
+                            <option>Newest First</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course Categories -->
+            <div class="mb-4">
+                <h2 class="h4 fw-bold mb-3">Categories</h2>
+                <div class="d-flex flex-wrap gap-2">
+                    <button class="btn btn-primary">All Courses</button>
+                    <button class="btn btn-outline-primary">Mathematics</button>
+                    <button class="btn btn-outline-primary">Physics</button>
+                    <button class="btn btn-outline-primary">Chemistry</button>
+                    <button class="btn btn-outline-primary">General Knowledge</button>
+                    <button class="btn btn-outline-primary">English</button>
+                </div>
+            </div>
+
+            <!-- Course Grid -->
+            <div class="row g-4 mb-5">
+                <!-- Course 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://placehold.co/600x400/e9ecef/495057?text=Complete+IMU-CET" class="card-img-top" alt="Complete IMU-CET Preparation">
+                        <div class="card-body">
+                            <h3 class="card-title h5 fw-bold">Complete IMU-CET Preparation</h3>
+                            <p class="card-text">A comprehensive course covering all subjects for the IMU-CET examination.</p>
+                            
+                            <div class="d-flex align-items-center text-muted small mb-3">
+                                <div class="me-3">
+                                    <i class="bi bi-book me-1"></i>
+                                    <span>120 lessons</span>
+                                </div>
+                                <div>6 months</div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fs-5 fw-bold text-primary">₹9,999</span>
+                                <a href="course-detail.html?id=1" class="btn btn-primary">View Course</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://placehold.co/600x400/e9ecef/495057?text=Mathematics" class="card-img-top" alt="Mathematics for IMU-CET">
+                        <div class="card-body">
+                            <h3 class="card-title h5 fw-bold">Mathematics for IMU-CET</h3>
+                            <p class="card-text">Master the mathematical concepts required for the IMU-CET examination.</p>
+                            
+                            <div class="d-flex align-items-center text-muted small mb-3">
+                                <div class="me-3">
+                                    <i class="bi bi-book me-1"></i>
+                                    <span>45 lessons</span>
+                                </div>
+                                <div>3 months</div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fs-5 fw-bold text-primary">₹3,999</span>
+                                <a href="course-detail.html?id=2" class="btn btn-primary">View Course</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://placehold.co/600x400/e9ecef/495057?text=Physics" class="card-img-top" alt="Physics for IMU-CET">
+                        <div class="card-body">
+                            <h3 class="card-title h5 fw-bold">Physics for IMU-CET</h3>
+                            <p class="card-text">Understand the physics concepts tested in the IMU-CET examination.</p>
+                            
+                            <div class="d-flex align-items-center text-muted small mb-3">
+                                <div class="me-3">
+                                    <i class="bi bi-book me-1"></i>
+                                    <span>40 lessons</span>
+                                </div>
+                                <div>3 months</div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fs-5 fw-bold text-primary">₹3,999</span>
+                                <a href="course-detail.html?id=3" class="btn btn-primary">View Course</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 4 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://placehold.co/600x400/e9ecef/495057?text=Chemistry" class="card-img-top" alt="Chemistry for IMU-CET">
+                        <div class="card-body">
+                            <h3 class="card-title h5 fw-bold">Chemistry for IMU-CET</h3>
+                            <p class="card-text">Learn all the chemistry topics covered in the IMU-CET syllabus.</p>
+                            
+                            <div class="d-flex align-items-center text-muted small mb-3">
+                                <div class="me-3">
+                                    <i class="bi bi-book me-1"></i>
+                                    <span>38 lessons</span>
+                                </div>
+                                <div>3 months</div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fs-5 fw-bold text-primary">₹3,999</span>
+                                <a href="course-detail.html?id=4" class="btn btn-primary">View Course</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 5 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://placehold.co/600x400/e9ecef/495057?text=General+Knowledge" class="card-img-top" alt="General Knowledge for IMU-CET">
+                        <div class="card-body">
+                            <h3 class="card-title h5 fw-bold">General Knowledge for IMU-CET</h3>
+                            <p class="card-text">Prepare for the general knowledge section of the IMU-CET exam.</p>
+                            
+                            <div class="d-flex align-items-center text-muted small mb-3">
+                                <div class="me-3">
+                                    <i class="bi bi-book me-1"></i>
+                                    <span>30 lessons</span>
+                                </div>
+                                <div>2 months</div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fs-5 fw-bold text-primary">₹2,999</span>
+                                <a href="course-detail.html?id=5" class="btn btn-primary">View Course</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Course 6 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://placehold.co/600x400/e9ecef/495057?text=English" class="card-img-top" alt="English for IMU-CET">
+                        <div class="card-body">
+                            <h3 class="card-title h5 fw-bold">English for IMU-CET</h3>
+                            <p class="card-text">Improve your English language skills for the IMU-CET examination.</p>
+                            
+                            <div class="d-flex align-items-center text-muted small mb-3">
+                                <div class="me-3">
+                                    <i class="bi bi-book me-1"></i>
+                                    <span>25 lessons</span>
+                                </div>
+                                <div>2 months</div>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fs-5 fw-bold text-primary">₹2,999</span>
+                                <a href="course-detail.html?id=6" class="btn btn-primary">View Course</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Course pagination" class="d-flex justify-content-center">
+                <ul class="pagination">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <img src="images/logo.png" alt="IMU CET PrepHub Logo" height="48" class="bg-white p-1 rounded mb-3">
+                    <p class="text-muted">India's premier online platform for IMU-CET preparation.</p>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h5 mb-3">Quick Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
+                        <li class="mb-2"><a href="courses.html" class="text-decoration-none text-muted">Courses</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h5 mb-3">Resources</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Blog</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">FAQs</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Terms & Conditions</a></li>
+                        <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="h5 mb-3">Contact Us</h4>
+                    <ul class="list-unstyled text-muted">
+                        <li class="mb-2">Email: info@imucetprephub.com</li>
+                        <li class="mb-2">Phone: +91 9876543210</li>
+                        <li class="mb-2">Address: Mumbai, Maharashtra, India</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary mt-4 pt-4 text-center text-muted">
+                <p>&copy; <span id="current-year"></span> IMU CET PrepHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

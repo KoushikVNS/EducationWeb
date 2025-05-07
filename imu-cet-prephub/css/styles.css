@@ -1,0 +1,206 @@
+/* IMU CET PrepHub - Main Stylesheet */
+
+/* Global Styles */
+:root {
+    --primary: #1d4ed8;
+    --primary-hover: #1e40af;
+    --primary-light: #dbeafe;
+    --secondary: #f8fafc;
+    --dark: #1e293b;
+    --light: #f1f5f9;
+    --gray: #64748b;
+    --success: #10b981;
+    --danger: #ef4444;
+    --warning: #f59e0b;
+    --info: #3b82f6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Custom Utility Classes */
+.bg-gradient-to-top-dark {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover, 
+.btn-primary:focus {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+.btn-outline-primary {
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-outline-primary:hover, 
+.btn-outline-primary:focus {
+    background-color: var(--primary-light);
+    color: var(--primary);
+    border-color: var(--primary);
+}
+
+/* Navbar */
+.navbar-container {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #4b5563;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:focus {
+    color: var(--primary);
+}
+
+.navbar-light .navbar-nav .active > .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Feature Icons */
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cards */
+.card {
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: #1e293b;
+}
+
+/* Progress Bars */
+.progress {
+    background-color: #e2e8f0;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background-color: var(--primary);
+    border-radius: 1rem;
+}
+
+/* Tabs */
+.nav-tabs .nav-link {
+    color: #64748b;
+    border: none;
+    padding: 0.75rem 1rem;
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link.active {
+    color: var(--primary);
+    border-bottom: 2px solid var(--primary);
+    background-color: transparent;
+}
+
+.nav-tabs .nav-link:hover {
+    border-color: transparent;
+}
+
+.nav-pills .nav-link {
+    color: #64748b;
+}
+
+.nav-pills .nav-link.active {
+    background-color: var(--primary);
+}
+
+/* Forms */
+.form-control:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 0.25rem rgba(29, 78, 216, 0.25);
+}
+
+/* Footer */
+footer {
+    background-color: #1e293b;
+    color: #fff; /* Ensures all footer text is white and visible */
+}
+
+footer a {
+    color: #fff; /* Ensure text is white and visible */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    color: #fff; /* Keep text white on hover */
+    text-decoration: none; /* Prevent underline on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .display-5 {
+        font-size: 2rem;
+    }
+    
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Custom Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Course Detail Page */
+.sticky-top {
+    top: 20px;
+    z-index: 100;
+}
+
+/* Dashboard Styles */
+.badge.rounded-pill {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
